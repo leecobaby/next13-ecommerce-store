@@ -45,7 +45,7 @@ export const Summary = () => {
           <div className="text-base font-medium text-gray-500">Order toal</div>
           <Currency value={totalPrice} />
         </div>
-        <Button className="w-full mt-6" onClick={onCheckout}>
+        <Button className="w-full mt-6" onClick={onCheckout} disabled={items.length === 0}>
           Checkout
         </Button>
       </div>
